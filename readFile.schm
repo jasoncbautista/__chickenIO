@@ -1,0 +1,7 @@
+; http://wiki.call-cc.org/chicken-for-python-programmers#chicken
+(use utils)
+(print "testing")
+(define fileString (read-all "file.txt") )
+
+(print fileString)
+
