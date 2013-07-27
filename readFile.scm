@@ -1,8 +1,7 @@
 ; http://wiki.call-cc.org/chicken-for-python-programmers#chicken
 (use utils)
+; Fetching our input file
 (define fileString (read-all "file.txt") )
-
-
 
 ; Print new line
 (define (println value)
@@ -11,9 +10,7 @@
 )
 
 ; Now a function to take in a string
-; and go through each character till the end
-
-
+; and go through each character till finding e
 (define (oneByOne str pos)
   ; Our base case
   (define len  (string-length str))
@@ -36,6 +33,7 @@
    (oneByOne str 0)
 )
 
+; Testing our function: 
 (newline)
 (write "position: ")
 (newline)
