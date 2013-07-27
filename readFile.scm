@@ -1,4 +1,3 @@
-; http://wiki.call-cc.org/chicken-for-python-programmers#chicken
 (use utils)
 ; Fetching our input file
 (define fileString (read-all "file.txt") )
