@@ -1,6 +1,6 @@
 (use utils)
 ; Fetching our input file
-(define fileString (read-all "file.txt") )
+(define fileString (read-all "file.txt") ) ; Danger: 1gb file? 100gb?
 
 ; Print new line
 (define (println value)
