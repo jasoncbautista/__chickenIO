@@ -3,5 +3,14 @@
 (print "testing")
 (define fileString (read-all "file.txt") )
 
-(print fileString)
+
+
+(define (findE str)
+   (define len  (string-length str))
+
+ )
+(write (findE "one"))
+(newline)
+
+
 
