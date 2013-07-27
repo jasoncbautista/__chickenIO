@@ -11,14 +11,14 @@
 ; Now a function to take in a string
 ; and go through each character till finding e
 (define (oneByOne str pos)
-  ; Our base case
   (define len  (string-length str))
-  (cond ((= pos len ) -1)
+  (cond ((= pos len ) -1) ; Our base case
         ((< pos len) 
-            ;(string-ref str pos)
+          ; We figure out if this is what we are looking for (e): 
           (define isE? (equal? "e"  (string (string-ref str pos))))
           (cond 
             (isE?  pos)
+            ; We keep looking...
             (else (oneByOne str (+ pos 1)))
           )
         )
